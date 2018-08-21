@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="-40dp"
+    android:background="@color/white"
+    android:elevation="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.rg.milkwala.view.activities.DescriptionActivity"
+    tools:showIn="@layout/description_actvity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.rg.milkwala.view.controls.TextViewRegular
+                android:id="@+id/textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/textViewRate"
+                android:gravity="start"
+                android:maxLines="1"
+                android:text="This is for testing purpose"
+                android:textColor="@color/text_colour"
+                android:textSize="16dp" />
+
+            <com.rg.milkwala.view.controls.TextViewBold
+                android:id="@+id/textViewRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/textViewPerLtr"
+                android:layout_weight="1"
+                android:text="120 Rs"
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp" />
+
+            <com.rg.milkwala.view.controls.TextViewRegular
+                android:id="@+id/textViewPerLtr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textViewRate"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:text="@string/per_ltr"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#EBEAE8"></View>
+
+        <com.rg.milkwala.view.controls.TextViewRegular
+            android:id="@+id/textViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="This app is for sellig the milk product overall the country and it is very useful app to earn money and sell milk product"
+            android:textSize="13dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#EBEAE8"></View>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonOnce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/chk_subscription"
+                android:drawablePadding="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/once"
+                android:textColor="@color/text_colour" />
+
+            <RadioButton
+                android:id="@+id/radioButtonMonthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/chk_subscription"
+                android:drawablePadding="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/monthly_subscription"
+                android:textColor="@color/text_colour" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle_graybox"
+            android:padding="5dp">
+
+            <com.rg.milkwala.view.controls.TextViewBold
+                android:id="@+id/textViewIncrement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="+"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <com.rg.milkwala.view.controls.TextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qty"
+                    android:textColor="@color/text_colour"
+                    android:textSize="13dp" />
+
+                <com.rg.milkwala.view.controls.TextViewRegular
+                    android:layout_width="wrap_content"
+                    android:id="@+id/textViewQuantity"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ltr"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <com.rg.milkwala.view.controls.TextViewBold
+                android:id="@+id/textViewDecrement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="-"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle_graybox"
+            android:padding="5dp">
+
+            <com.rg.milkwala.view.controls.TextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewDate"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="10-02-2016"
+                android:textColor="@color/text_colour"
+                android:textSize="13dp" />
+        </RelativeLayout>
+
+        <com.rg.milkwala.view.controls.ButtonRegular
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/addToCart"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="true"
+            android:background="@drawable/buttonclick_login"
+            android:text="@string/addToCart"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

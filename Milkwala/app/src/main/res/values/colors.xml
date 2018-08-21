@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6de2e2</color>
+    <color name="colorPrimaryDark">#49dbdb</color>
+    <color name="colorAccent">#EBB810</color>
+    <color name="white">#FFFF</color>
+    <color name="txt_hintcolor">#a9a7aa</color>
+    <color name="loginsecreen">#49DBDB</color>
+    <color name="text_colour">#80666467</color>
+    <color name="light_white_colour">#50FFFFFF</color>
+    <color name="light_primary_colour">#5089D0DF</color>
+    <color name="indicator_color1">#6de2e2</color>
+
+</resources>

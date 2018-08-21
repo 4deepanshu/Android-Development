@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:state_pressed="false" android:drawable="@drawable/allside_cornerround_whitebg" />
+    <item android:state_focused="true" android:state_pressed="true" android:drawable="@drawable/lightwhite_four_sideround_corner" />
+    <item android:state_focused="false" android:state_pressed="true" android:drawable="@drawable/lightwhite_four_sideround_corner" />
+    <item android:drawable="@drawable/allside_cornerround_whitebg" />
+</selector>

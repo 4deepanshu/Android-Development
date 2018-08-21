@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativehelping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.rg.milkwala.view.controls.TextViewRegular
+            android:id="@+id/prdctName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:layout_toLeftOf="@+id/date"
+            android:text="Mango"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22dp" />
+
+        <com.rg.milkwala.view.controls.TextViewRegular
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorPrimary"
+            android:paddingTop="10dp"
+            android:text="20/12/2016" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativehelping"
+        android:paddingBottom="10dp">
+        <com.rg.milkwala.view.controls.TextViewRegular
+            android:id="@+id/prdctQnty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:layout_toLeftOf="@+id/delevryStatus"
+            android:text="Mango"
+            android:textSize="18dp" />
+        <com.rg.milkwala.view.controls.TextViewRegular
+            android:id="@+id/delevryStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"
+            android:text="20/12/2016" />
+    </RelativeLayout>
+</LinearLayout>

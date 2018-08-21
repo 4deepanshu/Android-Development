@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_address"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90000000"
+    tools:context="com.rg.milkwala.view.activities.AddressActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/upper_side_round_whitebackground"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:id="@+id/helping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.rg.milkwala.view.controls.TextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select a Delivery Address"
+                android:textSize="15dp" />
+
+            <com.rg.milkwala.view.controls.TextViewBold
+                android:id="@+id/textViewDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Done"
+                android:textColor="@color/colorAccent"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/helping"
+            android:layout_marginTop="5dp"
+            android:background="@color/text_colour"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_above="@+id/view2"
+            android:layout_below="@+id/view"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recylerView"
+                android:layout_width="match_parent"
+                android:background="@android:color/white"
+                android:layout_height="match_parent"
+               ></android.support.v7.widget.RecyclerView>
+            <com.rg.milkwala.view.controls.TextViewRegular
+                android:layout_width="wrap_content"
+                android:textSize="14dp"
+                android:id="@+id/textViewNoAddress"
+                android:text="@string/no_addres_yet"
+                android:visibility="gone"
+                android:textColor="@color/colorAccent"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/textViewAddress"
+            android:layout_marginTop="5dp"
+            android:background="@color/text_colour"></View>
+
+        <com.rg.milkwala.view.controls.TextViewRegular
+            android:id="@+id/textViewAddress"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/add"
+            android:textColor="#90000000"
+            android:drawablePadding="10dp"
+            android:text="Add NewAddress"
+            android:textSize="14dp" />
+    </RelativeLayout>
+</RelativeLayout>

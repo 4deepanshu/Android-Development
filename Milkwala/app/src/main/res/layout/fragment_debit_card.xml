@@ -1,0 +1,111 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rg.milkwala.view.fragments.DebitCard">
+
+    <LinearLayout
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.rg.milkwala.view.controls.TextViewRegular
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:text="@string/cardNumber" />
+
+        <com.rg.milkwala.view.controls.EditTextRegular
+            android:id="@+id/editTextcardNumber"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_graystroke"
+            android:padding="5dp"
+            android:textSize="16dp" />
+
+        <com.rg.milkwala.view.controls.TextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:text="@string/nameoncard" />
+
+        <com.rg.milkwala.view.controls.EditTextRegular
+            android:id="@+id/editTextNameonCard"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_graystroke"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.rg.milkwala.view.controls.TextViewRegular
+                    android:layout_width="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expirationDtae" />
+
+                <com.rg.milkwala.view.controls.EditTextRegular
+                    android:id="@+id/editTextExpirationDate"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:hint="mm/yy"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_graystroke"
+                    android:padding="5dp"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.rg.milkwala.view.controls.TextViewRegular
+                    android:layout_width="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:text="@string/securityCode" />
+                <com.rg.milkwala.view.controls.EditTextRegular
+                    android:id="@+id/editTextSecurityCode"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_graystroke"
+                    android:padding="5dp"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.rg.milkwala.view.controls.ButtonRegular
+            android:layout_width="250dp"
+            android:background="@drawable/buttonclick_login"
+            android:layout_marginTop="40dp"
+            android:textSize="14dp"
+            android:id="@+id/buttonClickCompletePayment"
+            android:textColor="@android:color/white"
+            android:text="@string/completeyourPayment"
+            android:layout_gravity="center"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+</FrameLayout>

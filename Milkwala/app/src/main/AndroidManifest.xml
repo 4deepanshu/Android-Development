@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rg.milkwala">
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.activities.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.activities.LoginActivtiy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activities.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".view.activities.PersonalInfoActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDMZeRzYu3IIT8ZCVLAU7w5HP8I4qbek6E" />
+
+        <activity
+            android:name=".view.activities.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".view.activities.DescriptionActivity"
+            android:label="@string/title_activity_description"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".view.activities.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransperantToolbar" />
+        <activity
+            android:name=".view.activities.EditProfileActicity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransperantToolbar" />
+        <activity
+            android:name=".view.activities.ShoppingCart"
+            android:theme="@style/TransperantToolbar" />
+        <activity
+            android:name=".view.activities.AddressActivity"
+            android:theme="@style/Theme.CustomTheme.TransparentActivity" />
+        <activity
+            android:name=".view.activities.AddAddressActivity"
+            android:theme="@style/Theme.CustomTheme.TransparentActivity" />
+        <activity
+            android:name=".view.activities.OrderHistoryActivity"
+            android:theme="@style/TransperantToolbar"></activity>
+    </application>
+
+</manifest>

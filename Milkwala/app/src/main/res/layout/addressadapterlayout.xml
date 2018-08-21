@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/chechkBoxTick"
+            android:textColor="#90000000"
+            android:layout_toLeftOf="@+id/buttonClickEdit"
+            android:text="@string/adressString"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:button="@drawable/green_white_checkbox" />
+
+        <com.rg.milkwala.view.controls.ButtonRegular
+            android:id="@+id/buttonClickEdit"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/buttonclick_login"
+            android:text="Edit"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

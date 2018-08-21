@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent">
+        <ImageButton
+            android:id="@+id/imageButtonMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="10dp"
+            android:src="@drawable/menu" />
+        <com.rg.milkwala.view.controls.EditTextRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search Products"
+            android:id="@+id/etSearch"
+            android:visibility="gone"
+            android:imeOptions="actionSearch"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageButtonCart"
+            android:layout_toRightOf="@+id/imageButtonMenu"
+            android:background="@null"/>
+        <ImageButton
+            android:id="@+id/imageButtonCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@+id/textViewNotificationsCount"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="10dp"
+            android:src="@drawable/icon_bag" />
+
+        <com.rg.milkwala.view.controls.TextViewRegular
+            android:id="@+id/textViewNotificationsCount"
+            android:layout_width="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:background="@drawable/view_circle"
+            android:text="10"
+            android:textColor="#ffffff"
+            android:textSize="9dp" />
+    </RelativeLayout>
+</RelativeLayout>

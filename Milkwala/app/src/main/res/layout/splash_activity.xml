@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_new"
+    tools:context="com.rg.milkwala.view.activities.SplashActivity">
+
+    <!-- <ImageView
+         android:id="@+id/top_imageview"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/top_bg" />-->
+    <!--
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bottom_bg" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@drawable/app_logo" />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/name_text" />
+
+            <com.rg.milkwala.view.controls.TextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:visibility="gone"
+                android:layout_marginRight="40dp"
+                android:text="por ro quisquam est"
+                android:textSize="12dp" />
+
+        <com.rg.milkwala.view.controls.TextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="Lorem ipsum dolor sit amet,consecteur adipsicing is aliquip ex ea commodo"
+            android:textSize="14dp" />
+
+        <com.rg.milkwala.view.controls.ButtonRegular
+            android:id="@+id/button_getstarted"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonclick_login"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="gone"
+            android:stateListAnimator="@null"
+            android:text="@string/getstarted"
+            android:textColor="@android:color/white"
+            android:textSize="10dp" />
+    </LinearLayout>
+</RelativeLayout>
