@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#266E9E</color>
+    <color name="colorPrimaryDark">#266E9E</color>
+    <color name="colorAccent">#266E9E</color>
+    <color name="colorgreen">#18ff00</color>
+    <color name="colorpin">#d3ac5b</color>
+    <color name="yellow">#FFC924</color>
+    <color name="colordeactivated">#aaaaaa</color>
+    <color name="white">#ffffff</color>
+    <color name="list_selector">#e4e4e4</color>
+    <color name="radio_button_unselected_color">#70294A7B</color>
+    <color name="tab_background_selected">#32214F</color>
+    <color name="tab_background_unselected">#295B8B</color>
+    <color name="settingstouch">#20000000</color>
+    <color name="settingsNormal">#50000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="red">#FF0000</color>
+
+</resources>

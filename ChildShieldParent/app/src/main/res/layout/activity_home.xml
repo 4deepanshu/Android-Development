@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.schoolshieldparent_ui.view.activity.Activity_Home">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomborder"
+        android:gravity="center"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp">
+
+        <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:text="@string/home"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/spinner_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="2dp"
+        android:background="@null"
+        android:listSelector="@drawable/alert"
+        android:prompt="@string/selectChild" />
+
+    <GridView
+        android:id="@+id/gridViewMenu"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/spinner_child"
+        android:layout_marginTop="5dp"
+        android:numColumns="3"
+        android:padding="10dp"
+        android:scrollbars="none"
+        android:verticalSpacing="30dp"></GridView>
+
+</RelativeLayout>

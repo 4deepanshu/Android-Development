@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.schoolshieldparent_ui.view.activity.Activity_Register">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/imageButton_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="25dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/back_btn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/logo"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/messagelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewLogo"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                android:id="@+id/textViewMessage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registration"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+
+            <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                android:id="@+id/textViewMessage2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yourDetail"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#93A3B9"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/messagelayout"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <com.schoolshieldparent_ui.view.custom_controls.EditText_Light
+                    android:id="@+id/editextFirstName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bar"
+                    android:ems="10"
+                    android:hint="@string/firstName"
+                    android:inputType="textPersonName"
+                    android:padding="7dp"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="16dp" />
+
+                <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                    android:id="@+id/textViewErrorFirstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yourDetail"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ff0000"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <com.schoolshieldparent_ui.view.custom_controls.EditText_Light
+                    android:id="@+id/editextLastName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bar"
+                    android:ems="10"
+                    android:hint="@string/lastName"
+                    android:inputType="textPersonName"
+                    android:padding="7dp"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="16dp" />
+
+                <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                    android:id="@+id/textViewErrorLastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yourDetail"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ff0000"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <com.schoolshieldparent_ui.view.custom_controls.EditText_Light
+                    android:id="@+id/editextEmail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bar"
+                    android:ems="10"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:padding="7dp"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="16dp" />
+
+                <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                    android:id="@+id/textViewErrorEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yourDetail"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ff0000"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <com.schoolshieldparent_ui.view.custom_controls.EditText_Light
+                    android:id="@+id/editextPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bar"
+                    android:ems="10"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:padding="7dp"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="16dp" />
+
+                <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                    android:id="@+id/textViewErrorPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yourDetail"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ff0000"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <com.schoolshieldparent_ui.view.custom_controls.EditText_Light
+                    android:id="@+id/editextConfirmPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bar"
+                    android:ems="10"
+                    android:hint="@string/confirmPassword"
+                    android:inputType="textPassword"
+                    android:padding="7dp"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="16dp" />
+
+                <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                    android:id="@+id/textViewErrorConfirmPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yourDetail"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ff0000"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/buttonRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button_selector"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="@string/register"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

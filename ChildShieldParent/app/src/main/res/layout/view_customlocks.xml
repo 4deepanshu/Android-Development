@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical">
+
+            <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                android:id="@+id/textView_lockOrNot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="dfsdfd"
+                android:textColor="#fff"
+                android:textSize="18dp"/>
+
+            <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                android:id="@+id/textView_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="dfsdfd"
+                android:textColor="#fff"
+                android:textSize="15dp"/>
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton_delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/delete"/>
+
+
+    </RelativeLayout>
+
+    <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+        android:id="@+id/textView_days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout_main"
+        android:layout_marginTop="5dp"
+        android:text="dfsdfd"
+        android:textColor="#FFD700"
+        android:textSize="17dp"
+        android:visibility="gone"/>
+
+    <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+        android:id="@+id/textView_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_days"
+        android:layout_marginTop="5dp"
+        android:text="dfsdfgbdfgbdfdfd"
+        android:textColor="#e6ad00"
+        android:textSize="16dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/strip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="@color/list_selector">
+    </RelativeLayout>
+</RelativeLayout>

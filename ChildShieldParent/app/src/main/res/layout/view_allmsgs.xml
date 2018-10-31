@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        >
+
+
+        <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+            android:id="@+id/textViewPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/textViewMsgsCount"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:singleLine="true"
+            android:text="aaaaaa"
+            android:textColor="#fff"
+            android:textSize="16dp"/>
+
+        <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+            android:id="@+id/textViewMsgsCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:text="aaaaaa"
+            android:textColor="#fff"
+            android:textSize="16dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/list_selector"></RelativeLayout>
+</LinearLayout>

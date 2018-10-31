@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.schoolshieldparent_ui">
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name=".pushnotification.NotificationListener"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".view.activity.Activity_Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.activity.Activity_TandC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.Activity_Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.Activity_Register"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".view.activity.Activity_Home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.Activity_ForgotPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.Activity_Children"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.Activity_Notification"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".view.activity.BroadCast_Activity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".view.activity.Activity_Settings"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".view.activity.Activity_MyInfo"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".view.activity.Activity_Analytics"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".view.activity.Activity_TopRunnungApp"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".view.activity.Activity_Gallery"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".view.activity.Activity_Forums_Discription"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".view.activity.Activity_ForumsAllApps"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".view.activity.Activity_ForumAppDetail"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".view.activity.Activity_ForumAppCommets"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".view.activity.Activity_ForumAddMyCommments"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".view.activity.Activity_ForumAddAgeLimit"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".view.activity.Activity_ForumAddTrafficLight"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".view.activity.Activity_Location"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".view.activity.Activity_Applications"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".view.activity.Activity_ApplicationLock"
+            android:screenOrientation="portrait"></activity>
+
+        <!-- [START firebase_service] -->
+        <service android:name=".pushnotification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- [END firebase_service] -->
+        <!-- [START firebase_iid_service] -->
+        <service android:name=".pushnotification.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- [END firebase_iid_service] -->
+
+        <activity
+            android:name=".view.activity.Activity_CustomLock"
+            android:screenOrientation="portrait"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/android_key" />
+
+        <activity
+            android:name=".view.activity.Activity_AllChild_LockScreen"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".view.activity.Activity_CustomScreenLock"
+            android:screenOrientation="portrait"></activity>
+
+        <receiver
+            android:name=".controller.helper.custom_functions.CheckInternetConnection"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".view.activity.Activity_Message"></activity>
+        <activity android:name=".view.activity.Activity_MsgChat"></activity>
+        <activity android:name=".view.activity.Activity_History"></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="9f69055a361f517582a3d880d4b4a9e6856ba631" />
+    </application>
+
+</manifest>

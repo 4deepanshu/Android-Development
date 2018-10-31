@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="15dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+            android:id="@+id/textViewName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/imageButtonDelete"
+            android:singleLine="true"
+            android:text="Aarati Vashist (Active)"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="20dp"/>
+
+        <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+            android:id="@+id/textViewDeviceName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewName"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/imageButtonDelete"
+            android:singleLine="true"
+            android:text="Device : Motorola Moto X - 4.3 - API 18 - 720x1280"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="14dp"/>
+
+        <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+            android:id="@+id/textViewTotal_Applications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewDeviceName"
+            android:text="Applications : 111"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="14dp"/>
+
+        <ImageButton
+            android:id="@+id/imageButtonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/delete"/>
+    </RelativeLayout>
+
+</RelativeLayout>

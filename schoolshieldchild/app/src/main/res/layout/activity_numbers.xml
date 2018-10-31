@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="left"
+        android:text="Number For Call"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <com.schoolshieldchild_ui.view.custom_controls.EditText_Regular
+        android:id="@+id/edittext_CallNumberFather"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bar"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="Father's Phone Number"
+        android:inputType="phone"
+        android:padding="2dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#90ffffff"
+        android:textCursorDrawable="@drawable/cursor" />
+
+    <com.schoolshieldchild_ui.view.custom_controls.EditText_Regular
+        android:id="@+id/edittext_CallNumberMother"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bar"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="Mother's Phone Number"
+        android:inputType="phone"
+        android:padding="2dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#90ffffff"
+        android:textCursorDrawable="@drawable/cursor" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:padding="2dp"
+        android:text="Number For Message"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <com.schoolshieldchild_ui.view.custom_controls.EditText_Regular
+        android:id="@+id/edittext_MessageNumberFather"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bar"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="Father's Phone Number"
+        android:inputType="phone"
+        android:padding="2dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#90ffffff"
+        android:textCursorDrawable="@drawable/cursor" />
+
+    <com.schoolshieldchild_ui.view.custom_controls.EditText_Regular
+        android:id="@+id/edittext_MessageNumberMother"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bar"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="Mother's Phone Number"
+        android:inputType="phone"
+        android:padding="2dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#90ffffff"
+        android:textCursorDrawable="@drawable/cursor" />
+
+    <com.schoolshieldchild_ui.view.custom_controls.EditText_Regular
+        android:id="@+id/edittext_MessageText"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/contactmeHint"
+        android:maxLength="180"
+        android:maxLines="5"
+        android:padding="2dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#90ffffff"
+        android:textCursorDrawable="@drawable/cursor" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/strip"
+        android:scaleType="fitXY" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_selector"
+        android:ems="10"
+        android:text="UPDATE"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+
+</LinearLayout>

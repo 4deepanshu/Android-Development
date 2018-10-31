@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/analyticsrowselector"
+        android:gravity="center"
+        android:weightSum="4">
+
+        <ImageView
+            android:id="@+id/imageViewAppIcon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitXY"/>
+
+        <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+            android:id="@+id/textViewName"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imageViewAppIcon"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:text="aaaaaa"
+            android:textColor="#fff"
+            android:textSize="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/textViewName"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                android:id="@+id/nttextViewCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/timecountlayout"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:text="ddd"
+                android:textColor="#ffffff"
+                android:textSize="15dp"/>
+
+            <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                android:id="@+id/nttextViewTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="dddd"
+                android:textColor="#ffffff"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                android:id="@+id/textViewTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="dddddddddd"
+                android:textColor="#ffffff"
+                android:textSize="16dp"/>
+
+            <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                android:id="@+id/textViewDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="dddddddddd"
+                android:textColor="#ffffff"
+                android:textSize="16dp"/>
+
+            <LinearLayout
+                android:id="@+id/bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/red_checked"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:padding="5dp"/>
+
+                <CheckBox
+                    android:id="@+id/orange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/orange_checked"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:padding="5dp"/>
+
+                <CheckBox
+                    android:id="@+id/green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/green_checked"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:padding="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

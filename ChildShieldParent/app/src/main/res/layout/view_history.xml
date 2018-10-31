@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+             >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/textViewTime"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:textSize="16dp"
+
+            />
+
+        <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+            android:id="@+id/textViewURL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewTitle"
+            android:layout_toLeftOf="@+id/textViewTime"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:textSize="14dp"
+            />
+
+        <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:textSize="12dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/relativeLayoutcontainer"
+        android:background="#fff"></RelativeLayout>
+
+</RelativeLayout>

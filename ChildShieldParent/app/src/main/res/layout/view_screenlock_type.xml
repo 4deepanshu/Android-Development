@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/alert"
+              android:orientation="vertical"
+              android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.schoolshieldparent_ui.view.custom_controls.Button_Regular
+            android:id="@+id/buttonPermanentLock"
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/button_selector_alert"
+            android:ems="10"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/permanetLock"
+            android:textColor="#ffffff"/>
+
+        <com.schoolshieldparent_ui.view.custom_controls.Button_Regular
+            android:id="@+id/buttonCustom_Lock"
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/button_selector_alert"
+            android:ems="10"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/custom_Lock"
+            android:textColor="#ffffff"/>
+
+        <com.schoolshieldparent_ui.view.custom_controls.Button_Regular
+            android:id="@+id/buttonViewCustom_Lock"
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/button_selector_alert"
+            android:ems="10"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/view_custom_Lock"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+</LinearLayout>

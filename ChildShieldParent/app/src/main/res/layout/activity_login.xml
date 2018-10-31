@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.schoolshieldparent_ui.view.activity.Activity_Login" >
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.schoolshieldparent_ui.view.custom_controls.EditText_Light
+            android:id="@+id/editextEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bar"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="7dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textViewErrorEmail"
+            android:layout_width="fill_parent"
+            android:layout_gravity="left"
+            android:layout_height="wrap_content"
+            android:text="@string/yourDetail"
+            android:textColor="#ff0000"
+            android:textSize="13dp"
+            android:visibility="gone" />
+
+        <com.schoolshieldparent_ui.view.custom_controls.EditText_Light
+            android:id="@+id/editextPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bar"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="7dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textViewErrorPassword"
+            android:layout_width="fill_parent"
+            android:layout_gravity="left"
+            android:layout_height="wrap_content"
+            android:text="@string/yourDetail"
+            android:textColor="#ff0000"
+            android:textSize="13dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_selector"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/login"
+        android:textColor="#ffffff"
+        android:textSize="14dp" />
+
+    <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+        android:id="@+id/textViewForGotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/forgotPassword"
+        android:textColor="#93A3B9"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notRegister"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#93A3B9"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textViewSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signUp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</RelativeLayout>

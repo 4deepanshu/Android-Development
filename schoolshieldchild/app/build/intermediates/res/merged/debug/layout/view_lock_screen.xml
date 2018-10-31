@@ -1,0 +1,209 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+   >
+
+    <EditText
+        android:layout_margin="50dp"
+        android:background="@drawable/bottomborder_white"
+        android:id="@+id/editTextPasswr"
+        android:layout_width="match_parent"
+        android:layout_weight="1.1"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center"
+        android:text=""
+        android:inputType="textPassword"
+        android:padding="23dp"
+        android:textColor="#ffffff"
+        android:textSize="23dp" />
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/editTextPasswr"
+        android:layout_above="@+id/buttonEmergency"
+        android:id="@+id/buttonContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonone"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="@drawable/button_selector_lock"
+                android:ems="10"
+                android:text="1"
+                android:textColor="#ffffff"
+                android:textSize="23dp" />
+
+            <Button
+                android:id="@+id/buttontwo"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="@drawable/button_selector_lock"
+                android:ems="10"
+                android:text="2"
+                android:textColor="#ffffff"
+                android:textSize="23dp" />
+
+            <Button
+                android:id="@+id/buttonthree"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="@drawable/button_selector_lock"
+                android:ems="10"
+                android:text="3"
+                android:textColor="#ffffff"
+                android:textSize="23dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/buttonfour"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="@drawable/button_selector_lock"
+                android:ems="10"
+                android:text="4"
+                android:textColor="#ffffff"
+                android:textSize="23dp" />
+
+            <Button
+                android:id="@+id/buttonfive"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="@drawable/button_selector_lock"
+                android:ems="10"
+                android:text="5"
+                android:textColor="#ffffff"
+                android:textSize="23dp" />
+
+            <Button
+                android:id="@+id/buttonsix"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="@drawable/button_selector_lock"
+                android:ems="10"
+                android:text="6"
+                android:textColor="#ffffff"
+                android:textSize="23dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/buttonseven"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="@drawable/button_selector_lock"
+                android:ems="10"
+                android:text="7"
+                android:textColor="#ffffff"
+                android:textSize="23dp" />
+
+            <Button
+                android:id="@+id/buttoneight"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="@drawable/button_selector_lock"
+                android:ems="10"
+                android:text="8"
+                android:textColor="#ffffff"
+                android:textSize="23dp" />
+
+            <Button
+                android:id="@+id/buttonnine"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="@drawable/button_selector_lock"
+                android:ems="10"
+                android:text="9"
+                android:textColor="#ffffff"
+                android:textSize="23dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/buttonclose"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="@drawable/button_selector_lock"
+                android:ems="10"
+                android:text="@string/close"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/buttonzerro"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="@drawable/button_selector_lock"
+                android:ems="10"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="23dp" />
+
+            <Button
+                android:id="@+id/buttonclear"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="@drawable/button_selector_lock"
+                android:ems="10"
+                android:text="@string/clear"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonEmergency"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_selector_lock"
+        android:ems="10"
+        android:visibility="visible"
+        android:text="Emergency Call"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+
+</RelativeLayout>

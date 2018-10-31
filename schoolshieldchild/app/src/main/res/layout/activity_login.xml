@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.schoolshieldchild_ui.view.activity.LoginActivity">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_below="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+
+        <com.schoolshieldchild_ui.view.custom_controls.TextView_Regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="@string/loginText"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <com.schoolshieldchild_ui.view.custom_controls.EditText_Regular
+            android:id="@+id/editText_childpin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_edittext"
+            android:gravity="center"
+            android:hint="@string/childpin"
+            android:inputType="numberPassword"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="20dp" />
+
+        <com.schoolshieldchild_ui.view.custom_controls.TextView_Regular
+            android:id="@+id/textView_HowToGetPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+
+            android:gravity="center"
+            android:text="@string/howtogetpin"
+            android:textColor="#6c6cff"
+            android:textSize="15dp" />
+
+        <com.schoolshieldchild_ui.view.custom_controls.Button_Regular
+            android:id="@+id/button_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/mybutton"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/login_confirm"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</RelativeLayout>

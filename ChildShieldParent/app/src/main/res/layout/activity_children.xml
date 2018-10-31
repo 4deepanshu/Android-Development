@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_child"
+                tools:context="com.schoolshieldparent_ui.view.activity.Activity_Children">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomborder"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/childrens"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="18dp"/>
+
+        <ImageButton
+            android:id="@+id/imageButton_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:paddingLeft="14dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/home_icon"/>
+
+        <ImageButton
+            android:id="@+id/imageButton_Add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:paddingLeft="20dp"
+            android:paddingRight="14dp"
+            android:src="@drawable/add"/>
+    </RelativeLayout>
+
+    <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+        android:id="@+id/info"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:layout_centerInParent="true"
+        android:gravity="left|right|center_vertical"
+        android:padding="10dp"
+        android:text="@string/howtoregisterchild"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:visibility="gone"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeContainerChilred"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header">
+
+        <ListView
+            android:id="@+id/listviewChild"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:divider="#50FFFFFF"
+            android:dividerHeight="1dp"
+            android:scrollbars="none"></ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

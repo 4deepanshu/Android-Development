@@ -1,0 +1,352 @@
+<resources>
+    <string name="sender_id">1002226963944</string>
+    <string name="android_key">AIzaSyDj2QhHw_Qgdmje9-reGEOWZqUf1sP3Mp8</string>
+    <string name="splashtext">ChildShield Parent</string>
+    <string name="googleApiSender">1002226963944</string>
+    <string name="app_name">ChildShield Parent</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_activity__register">Activity_Register</string>
+    <string name="registration">Registration</string>
+    <string name="yourDetail">Please provide us your following details. :)</string>
+    <string name="email">Email</string>
+    <string name="confirmemail">Confirm Email</string>
+    <string name="password">Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="Ok">Ok</string>
+    <string name="registerSucess">Your profile has been registerd.</string>
+    <string name="emailAllreadyExist">This email has already been registered .Sign into your
+        existing account, or register with a different email.
+    </string>
+    <string name="registrationFail">Unfortunately registration failed please try again.</string>
+    <string name="enterFirstName">You can\'t leave first name empty.</string>
+    <string name="enterLastName">You can\'t leave last name empty.</string>
+    <string name="enterEmail">Enter your email address</string>
+    <string name="enterValidEmail">Please enter valid email.</string>
+    <string name="passwordNotMatched">These passwords don\'t match. Try again!</string>
+    <string name="enterPassword">Enter password</string>
+    <string name="enterconfirmPassword">Enter confirm password.</string>
+    <string name="login">Login</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="notRegister">If you are not register please</string>
+    <string name="signUp">SignUp</string>
+    <string name="loginSuccess">You have registed sucessfuly please try to login</string>
+    <string name="wrongCredentials">The email and password you entered don\'t match.</string>
+    <string name="title_activity_activity__home">Activity_Home</string>
+    <string name="title_activity_activity__forgot_password">Activity_ForgotPassword</string>
+    <string name="forgotPassoword">Forgot Password?</string>
+    <string name="provideus">Please provide us your email address and we will send you a new
+        password. You can login using the new password.
+    </string>
+    <string name="submit">Submit</string>
+    <string name="continuee">Continue</string>
+    <string name="checkYouremail">Feedback\n\nPassword has been sent to your email id , Please check
+        your email address.\n\nGo back and try to login.
+    </string>
+    <string name="wrongEmail">No account found with that email address which you entered</string>
+    <string name="somethingWentWrong">Something went wrong please try again, or check your internet
+        connection
+    </string>
+    <string name="unableToLogout">Unable to logout.</string>
+    <string name="history">History</string>
+
+    <string-array name="menuNames">
+        <item>Notifications</item>
+        <item>Analytics</item>
+        <item>Location</item>
+        <item>History</item>
+        <item>Block Apps</item>
+        <item>Screen Off</item>
+        <item>Messages</item>
+        <item>Forums</item>
+        <item>My Children</item>
+        <item>Gallery</item>
+        <item>My Info</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string name="home">Home</string>
+    <string name="title_activity_activity__info">Activity_Info</string>
+    <string name="yourName">Peter Kirwan</string>
+    <string name="yourEmail">peter.kirwan@halcyongroup.ie</string>
+    <string name="title_activity_activity__child">Activity_Child</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_activity__children">Activity_Children</string>
+    <string name="childrens">Children</string>
+    <string name="childInfo">Child Information</string>
+    <string name="addChildButton">Add Child</string>
+    <string name="childName">Child Name</string>
+    <string name="childEmail">Child Email</string>
+    <string name="unabletoaddchild">Error:\nSomething went wrong , Unable to add child.</string>
+    <string name="ChildAddedSuccess">Feedback\n\n Child added successfuly.\n\n Share shield bully
+        child application with child device\n\n You will be notified when child will login on device.
+    </string>
+    <string name="allreadyExist">Error\nThis child email is allready exist.</string>
+    <string name="paswordUpdated">Password has been updated successfully.</string>
+    <string name="passwordUpdateFail">Error \nSorry password not updated try again.</string>
+    <string name="passwordWentWrong">Error \n Sorry password updation fail , Try again</string>
+    <string name="title_activity_activity__block_child">Activity_BlockChild</string>
+    <string name="childnotLoginYet">Alert\n\nThis child is not loged in yet.</string>
+    <string name="application">Applications</string>
+    <string name="title_activity_activity__settings">Activity_Settings</string>
+    <string name="settings">Settings</string>
+    <string name="notification">Notifications</string>
+    <string name="viewPlans">Upgrade To Premium</string>
+    <string name="termAndConditions">Terms &amp; Conditions</string>
+    <string name="Aboutus">About Us</string>
+    <string name="title_activity_activity__location">Activity_Location</string>
+    <string name="location">Location</string>
+    <string name="title_activity_activity__application_lock">Activity_ApplicationLock</string>
+    <string name="selectDuration">Select Durations</string>
+    <string name="starttime">Start Time</string>
+    <string name="endtime">End Time</string>
+    <string name="daily">Daily</string>
+    <string name="applicationlocked">You will be notified when lock is applied on child phone</string>
+    <string name="applicationunlocked">Application Unlocked</string>
+    <string name="screenlocked">You will be notified when Screen lock is applied on child phone</string>
+    <string name="screenLockedFail">Warning :\n\n Unable to lock Screen of child.</string>
+    <string name="applicationLockedFail">Warning :\n\n Unable to lock applicaiton.</string>
+    <string name="lockExist">Warning :\n\n Lock with this title is allready exists.</string>
+    <string name="applicationLockSomethinwentwrong">Error:\n\n Something went wrong , Unable to
+        execute the request at the moment.
+    </string>
+    <string name="checkYourTime">Please check your start time and end time.</string>
+    <string name="title_activity_activity__forums">Activity_Forums</string>
+    <string name="forum">Forums</string>
+    <string name="title_activity_activity__application_commets">Activity_ApplicationCommets</string>
+    <string name="add">Add</string>
+    <string name="addcomments">Add Comment....</string>
+    <string name="addingComment">Adding Comment...</string>
+    <string name="unableToPost">Unable to post your comment ,Try again.</string>
+    <string name="pleaseentercomment">Please enter comments.</string>
+    <string name="lockapplicatuion">Lock Application</string>
+    <string name="permanetLock">Permanent Lock</string>
+    <string name="permanetRemove">Remove Permanent Lock</string>
+    <string name="unlockapplication">Unlock Application</string>
+    <string name="applicationLockedPermanently">This application is locked permanenty.</string>
+    <string name="appinstalled">installed.</string>
+    <string name="appunistall">Removed from device</string>
+    <string name="title_activity_activity__notifications">Activity_Notifications</string>
+    <string name="title_activity_activity__gallery">Activity_Gallery</string>
+    <string name="gallery">Gallery</string>
+    <string name="title_activity_activity__history">Activity_History</string>
+    <string name="loadingApplications_remaining">Reciving applications\n Pull list down to refresh
+    </string>
+    <string name="custom_Lock">Custom Lock</string>
+    <string name="view_custom_Lock">View Custom Lock</string>
+
+    <string name="pin">PIN</string>
+    <string name="pressagain">Press again to exit.</string>
+    <string name="reset">Reset</string>
+    <string name="delete">Delete</string>
+    <string name="rate">Rate</string>
+    <string name="cancel">Cancel</string>
+    <string name="logoutConfirm">Are you sure?\n\n Do you want to logout?</string>
+    <string name="logout">Log out</string>
+    <string name="areyousure">Are you sure? \n\n You want to reset the password , With this opration
+        child will automatically loged out from its device.
+    </string>
+    <string name="locationNotFound">Sorry there is no location update for this user.</string>
+    <string name="restartApplication">Unable to register device on google please restart.</string>
+    <string name="notificationFrom">New action found on</string>
+    <string name="device">device</string>
+    <string name="nochildfound">Feedback\n\n There is no child yet.\nPlease create child first.
+    </string>
+    <string name="createChild">Create</string>
+    <string name="turnOffNotificationAlert">Turn on/off child activity alerts</string>
+    <string name="plansDetail">Upgrade to premium to use all the features</string>
+    <string name="locked">This application is locked from</string>
+    <string name="to">to</string>
+    <string name="resetApp">Press unlock to reschedule this application</string>
+    <string name="title_activity_application__analytics__detail">Application_Analytics_Detail
+    </string>
+    <string name="sessionDistroyd">Last session of you login has been distroyed. Try again to
+        login
+    </string>
+    <string name="noapplicationFound">There is no application yet.</string>
+    <string name="screenLockedsucess">Screen lock set successfully</string>
+    <string name="screenlockRemoved">Screen lock removed successfully</string>
+    <string name="allowApplicationToInstall">Prevent installing or uninstalling application</string>
+    <string name="title_activity_activity__message">Activity_Message</string>
+    <string name="messages">Messages</string>
+    <string name="nomessage">There is no conversation yet</string>
+    <string name="title_activity_activity__message_detail">Activity_MessageDetail</string>
+    <string name="today">Today</string>
+    <string name="lastweek">Last Week</string>
+    <string name="lastMonth">Last Month</string>
+    <string name="lockedApps">Locked</string>
+    <string name="unlockedApps">Unlocked</string>
+    <string name="allhistory">All</string>
+    <string name="title_activity_main_activity__temp">MainActivity_TEMP</string>
+    <string name="howtoregisterchild">It seems there is no child created yet.\n\n\n\nTo
+        create a child press + button at the top right corner . Enter Child information , After
+        successful registration this application will automatically generate a password for that
+        child.
+    </string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="age">Age</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="fillallthefields">Please fill all the details.</string>
+    <string name="enterFname">Please enter first name.</string>
+    <string name="enterLname">Please enter last name.</string>
+    <string name="ageofChild">Select age of child.</string>
+    <string name="genderofChild">Select gender of child.</string>
+    <string name="lockNow">Immediate Lock</string>
+    <string name="removelockscreen">Remove Lock</string>
+    <string name="settime">Set Time</string>
+    <string name="Profile">Profile</string>
+    <string name="Device">Device</string>
+    <string name="Applications">Applications</string>
+    <string name="viewInPlayStore">Download</string>
+    <string name="shareVia">Share</string>
+    <string name="DeleteChild">Are You Sure?\n\nThis operation will delete child and all its data
+        .
+    </string>
+    <string name="formOptionHeading">Choose Your Option</string>
+    <string name="formOption1">View other parents comments</string>
+    <string name="formOption2">Post your own comments</string>
+    <string name="formOption3">Rate this applications</string>
+    <string name="formOption4">Choose your option for age</string>
+    <string name="formOption5">Traffic light</string>
+    <string name="title_activity_activity__forms__options">Activity_Forms_Options</string>
+    <string name="title_activity_activity__age_limt">Activity_AgeLimt</string>
+    <string name="ageLimitHead">Age Limit</string>
+    <string name="ageLimit1">0 - 6</string>
+    <string name="ageLimit2">6 - 12</string>
+    <string name="ageLimit3">12 -18</string>
+    <string name="ageLimit4">18+</string>
+    <string name="settitmeFormsage">Set age limit for</string>
+    <string name="red">Red</string>
+    <string name="orange">Orange</string>
+    <string name="green">Green</string>
+    <string name="redMeaing">Please do not allow</string>
+    <string name="orangeMeaning">Requires supervision</string>
+    <string name="greenMeaing">Safe</string>
+    <string name="traficLight">Traffic Lights</string>
+    <string name="title_activity_activity__forums__discription">Activity_Forums_Discription</string>
+    <string name="forminfo">This is a virtual chat room for parents to compare experiences with Apps
+        and websites etc. The purpose of this is to help enlighten each other should you discover a
+        dangerous or inappropriate App/ site.
+    </string>
+    <string name="lockTitle">Lock title...</string>
+    <string name="titleCheck">Title must be grater than 5 characters.</string>
+    <string name="title_activity_activity__custom_lock__detail">Activity_CustomLock_Detail</string>
+    <string name="customLocks">Custom Locks</string>
+    <string name="deleteLock">Are You Sure?\n\nDo you want to remove this lock .</string>
+    <string name="nolockyet">Lock Not Found\n\n There is no custom lock applied yet.</string>
+    <string name="thanksForPermium">Payment successful\n\n Enjoy the premium version of Shild Bully
+        Parent\n\n Please restart the application for applying changes
+    </string>
+    <string name="somethingwentwrongonpayment">Unable to connect with payment gateway</string>
+    <string name="paymentoption">Select Your Option</string>
+    <string name="locknotactivated">This lock is not applied to child device yet</string>
+
+    <string name="useforfree">Use coupon code for premium version</string>
+    <string name="payfromgoogle">Google Subscription</string>
+    <string name="usecoupnecode">Enter Your Code</string>
+    <string name="confirmcode">Confirm Code</string>
+    <string name="freeversionMessage">Coupon Applied \n\n Enjoy the premium version of Child Shield
+        Parent\n\n Please restart the application to apply changes
+    </string>
+    <string name="setlocknow">Set Lock</string>
+    <string name="headingForSelectChild">Select Child For This Lock</string>
+    <string name="selectDay">Select Day</string>
+    <string name="selectChild">Choose a child</string>
+    <string name="childNotActivated">Feedback\n\nThis child is not activated yet, Please login the
+        child on device to activate
+    </string>
+    <string name="pleseselectchildalert">Feedback\n\nPlease select child from children list</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="analytics">Analytics</string>
+    <string name="topapp">Top Running App</string>
+    <string name="islocked">Unlock</string>
+    <string name="isnotlocked">Lock</string>
+    <string name="setagelimit">Please select age limit</string>
+    <string name="ageaddedsuccessfully">Age Limit added successfully</string>
+    <string name="setlight">Please select one trafic light</string>
+    <string name="trafficlightadded">Traffice Light set Successfully</string>
+    <string name="ratedsuccessfully">Rated Successfully</string>
+    <string name="allLocation">All Location</string>
+    <string name="latest">Latest</string>
+    <string name="lockapplied">lock applied on</string>
+    <string name="applicationlockedfail">Unable to add lock , Please try again</string>
+    <string name="screenlockapplied">Screen lock applied on</string>
+    <string name="screenapplicationlockedfail">Unable to add Screen lock , Please try again</string>
+
+    <string name="lockDeleted">Permanent lock deleted</string>
+    <string name="unablelockdelete">Unable to remove permanent lock</string>
+    <string name="notifylockdeleted">You will be notified when lock deleted on child device</string>
+    <string name="notifylockdeletedfail">Unable to remove lock</string>
+    <string name="deleted">deleted</string>
+    <string name="lockdeleted">lock deleted</string>
+    <string name="applocked">Application Locked</string>
+    <string name="from">from</string>
+    <string name="thereisnolockappliedyet">There is no lock applied yet</string>
+    <string name="customScreenLocks">Custom Screen Lock</string>
+    <string name="permanetLockScreen">Permanent screen </string>
+    <string name="screenlock">Screen lock applied on</string>
+    <string name="screenlockdeted">Screen lock deleted from</string>
+    <string name="permanentscreenlockdeted">Permanent screen lock delete from</string>
+    <string name="screenlockadded">Screen Lock Applied</string>
+    <string name="screenlockremoved">Screen Lock Removed</string>
+    <string name="startedandclosed">Just Started And Closed</string>
+    <string name="parentregistersucessfully">Registration sucessful , please try to login with same user name and password</string>
+    <string name="parentregisterfail">Registration fail, Please try again</string>
+    <string name="loginfail">Login fail\n\nUnable to login please try again</string>
+    <string name="refresh">refresh</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="Thursday">Thursday</string>
+    <string name="Friday">Friday</string>
+    <string name="Saturday">Saturday</string>
+    <string name="allDays">Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,</string>
+    <string name="pleaseselecteanyday">Feedback   Please select any Day or Check Daily option</string>
+    <string name="yearsold">Years old,</string>
+    <string name="agemustbegreaterthan1year">Age must be greater than 1 year.</string>
+    <string name="thisapppackagename">com.shildbullychild.ui</string>
+    <string name="marketdetail">market://details?id=</string>
+    <string name="applicationStoreLink">https://play.google.com/apps/testing/com.shieldbullychild.ui</string>
+    <string name="downloadChildFromURl">Download Shield Bully Child from      http://play.google.com/store/apps/details?id=com.shieldbullychild.ui    Share this url with your child phone</string>
+    <string name="schoolshielbullyparent">School Shield Bully Parent</string>
+    <string name="shareschoolshieldbullychild">Share Child Shield Bully Child</string>
+    <string name="pleaseentercommenttoadd">Please enter comment to add.</string>
+    <string name="pleaseenterbacktoquit">Press Back again to quit.</string>
+    <string name="chooseachild">Choose a child</string>
+    <string name="thereisnochildyet">There is no child yet</string>
+    <string name="nointernetConnection">Please Check Your Internet Connection</string>
+    <string name="peramanentlyLocked">Permanently locked</string>
+    <string name="and">and</string>
+    <string name="customlockapplied">Custom lock applied</string>
+    <string name="activated">Activated</string>
+    <string name="deactivated">Deactivated</string>
+    <string name="thereisnochildyetCreatechildFirst">There is no child yet , Create child first from \"My Children\" Option</string>
+    <string name="uninstall">UNINSTALL</string>
+    <string name="install">INSTALL</string>
+    <string name="gps">GPS</string>
+    <string name="lock">LOCK</string>
+    <string name="unlock">UNLOCK</string>
+    <string name="time">TIME</string>
+    <string name="off">OFF</string>
+    <string name="turnedoff">Turned Off</string>
+    <string name="turnedon">Turned On</string>
+    <string name="notactivatedyet">Not activated yet</string>
+    <string name="notfound">: Not Found</string>
+    <string name="screenpermanentlylocked">Screen Permanently locked</string>
+    <string name="imagefrom">Image From :</string>
+    <string name="phonerestart">PHONE_RESTART</string>
+    <string name="phnrestart">Phone Restart</string>
+    <string name="pinclick">Tap pin to view detail</string>
+    <string name="unknownlocation">Unknown location</string>
+
+
+</resources>

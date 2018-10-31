@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Shield Zone Child</string>
+    <string name="welcometext">Welcome to ChildShield Child</string>
+    <string name="welcomeAgreetext">Please agree and continue our terms and conditions to use this application</string>
+    <string name="termsofservices">TERMS OF SERVICES</string>
+    <string name="agreeandcontinue">AGREE AND CONTINUE</string>
+    <string name="next">Next</string>
+    <string name="loginText">Please check child pin in Parent\n Application From child section</string>
+    <string name="howtogetpin">How To Get Pin?</string>
+    <string name="childpin">Child Pin</string>
+    <string name="login_confirm">Confirm</string>
+    <string name="sender_id">584880072279</string>
+    <string name="done">Done</string>
+    <string name="loginsuccessfully">Login SuccessFully</string>
+    <string name="loginUnSuccesfully">Unable to register your device , Please restart application</string>
+    <string name="close">Close</string>
+    <string name="clear">Clear</string>
+
+
+    <array name="TutorialText">
+        <item>How to use Parent Application</item>
+        <item>Select My Children Option</item>
+        <item>Get Child Pin</item>
+
+    </array>
+    <string name="title_activity_maps">Map</string>
+    <string name="phonelocationlocation">Phone is locked on this location</string>
+    <string name="unabletounlockscreen">Unable to unlock screen, Please check internet connection</string>
+    <string name="screenlockremoved">Screenlock removed</string>
+    <string name="accessibility_service_name">ShieldBully_Detect</string>
+    <string name="accessibility_service_description">Activate Service</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_activity__lock">Activity_Lock</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="enterValidEmail">Please enter valid email.</string>
+    <string name="enterEmail">Enter your email address</string>
+    <string name="wrongCredentials">Wrong Pin.</string>
+    <string name="enterPin">Enter your PIN</string>
+    <string name="confirm">Confirm</string>
+    <string name="confirmyourpin">Pin Confirmation</string>
+    <string name="enableappaccess">Please enable app usage access for Shield Bully Child.</string>
+    <string name="title_activity_activity__numbers">Activity_Numbers</string>
+    <string name="contactme">Hi, I need your help , contact me as soon as possible.</string>
+    <string name="contactmeHint">Enter your message..\n\nDefault message : Hi, I need your help , contact me as soon as possible.</string>
+    <string name="pinempty">Pin can\'t be empty.</string>
+    <string name="notmatched">The Pin you entered don\'t match. </string>
+    <string name="settings">Administrator Settings</string>
+    <string name="usageAccessTitle">Usage Access</string>
+    <string name="usageAccessMessage">Activate application usage to lock screen remotely.</string>
+    <string name="adminPermissionTitle">Activate Application</string>
+    <string name="adminPermissionMessage">Activate device adminstrator to prevent application lock from being accidentally closed by cleaing applications.</string>
+    <string name="pin">Child Pin</string>
+    <string name="checkPin">Please check child pin in Parent Application From child Section</string>
+    <string name="title_activity_activity__welcome">Activity_Welcome</string>
+    <string name="welcomemessage">Welcome to Shieldbully Child</string>
+    <string name="agreetrm">Please agree and continue our term and conditions to use this application</string>
+    <string name="termandservices">TERMS OF SERVICE</string>
+    <string name="agreenandcont">Agree and continue</string>
+    <string name="howtouse1">Start Shield Bully Parent Application From Parent Device</string>
+    <string name="howtouse2">Select My Children Option</string>
+    <string name="howtouse3">Get Child Pin</string>
+    <string name="getChildPin">How To Get Pin ?</string>
+    <string name="warningmessage">Please press \"Setting\" to enter emergency call/message details</string>
+    <string name="title_activity_activity__tand_c">Activity_TandC</string>
+    <string name="accessibility_service_desc">Service Access</string>
+    <string name="accessibility_service_label">Service Access</string>
+    <string name="permdesc_setTime">Time</string>
+    <string name="permlab_setTime">Time</string>
+    <string name="settings_message">1. Block Settings Application from Parent Section(Block Apps)\n\n2. Turn on GPS for locations</string>
+    <string name="timeHeader">Time Settings</string>
+    <string name="timeMessage">Enable automatic date &amp; time, And use 12 hours format </string>
+    <string name="enableoverotherapps"><b>Enable</b>\n Permit drawing over other apps\n\n Press back to exit</string>
+    <string name="activateadmin">Activate device admin\n\n It will prevent application to stop </string>
+    <string name="usageaccessenable">Find ChildShield Child in the list and enable the access \n\n Press back to exit</string>
+    <string name="notificationsend">Emergnecy notification send</string>
+    <string name="unabletosendnotification">Sorry , Unable to send the notification</string>
+    <string name="settings_text">Settings</string>
+    <string name="PhoneNumbers">Phone Numbers</string>
+    <string name="turnonusageaccesstitle">Usage Access</string>
+
+    <string name="turnonusageaccess">Turn On Usage Access</string>
+    <string name="turnonusageaccessmessage">In order to establish screen lock and application lock, Enable Usage Access for ChildShield Child</string>
+    <string name="enabledeviceadmintitle">Device Admin</string>
+    <string name="enabledeviceadmin">Manage This Device</string>
+    <string name="enabledeviceadminmessage">Please activate "Device Administrator" to manage the device , It will prevent application to stop from stoping</string>
+    <string name="drawoverotherapplicationtitle">Application Overlay</string>
+    <string name="drawoverotherapplication">Draw Over Other Applications</string>
+    <string name="drawoverotherapplicationmessage">Please activate "Permit drawing over other apps" to show lock screen</string>
+    <string name="activate">Activate</string>
+    <string name="activationfail">Activation fail, Please try again</string>
+
+
+</resources>

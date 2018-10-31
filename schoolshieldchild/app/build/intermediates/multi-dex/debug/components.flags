@@ -1,0 +1,225 @@
+-injars 'E:\Aseem Data\shueldbully\Child School Shield\schoolshieldchild\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
+-outjars 'E:\Aseem Data\shueldbully\Child School Shield\schoolshieldchild\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'C:\Users\Mobile\AppData\Local\Android\Sdk\build-tools\23.0.3\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **,com.android.tools.fd.**,android.support.multidex.MultiDexExtractor
+-dontwarn **
+-printconfiguration 'E:\Aseem Data\shueldbully\Child School Shield\schoolshieldchild\app\build\intermediates\multi-dex\debug\components.flags'
+
+
+-keep class com.schoolshieldchild_ui.app.MyApplication {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class com.schoolshieldchild_ui.view.activity.SplashActivity {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.activity.TutorialActivity {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.activity.LoginActivity {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.activity.HomeActivity {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.services.locationlock.LocationUpdate {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.services.locationlock.LocationLockScreenView {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.services.screenlock.DetectScreenLock {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.services.screenlock.SceenLockView {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.services.userlocation.UserLocationUpdate {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.services.UploadApplications {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.services.UploadGalleryImages {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.services.UploadHistory {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.services.applicationlocking.DetectLockService {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.services.applicationlocking.LockScreenView {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.services.ApplicationRunningTime {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.services.phonerestart.BootUpReceiver {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.services.InstallUninstallIntentReceiver {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.services.detectors.GpsOnOffDetector {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.services.permissions.MyAdmin {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.pushnotification.MyFirebaseMessagingService {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.pushnotification.MyFirebaseInstanceIDService {
+    <init>();
+}
+
+-keep class com.tuenti.smsradar.SmsRadarService {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.services.messagereciver.InitilizeIncommingAndOutgoingmessageHandler {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.activity.NumbersSettingsActivity {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.activity.Activity_UsageAccessEnable {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.activity.Activity_AdminEnable {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.activity.Activity_DrawOverOtherApplicatin {
+    <init>();
+}
+
+-keep class com.schoolshieldchild_ui.view.services.ScreenReceiver {
+    <init>();
+}
+
+-keep class com.google.firebase.messaging.FirebaseMessagingService {
+    <init>();
+}
+
+-keep class com.google.firebase.iid.FirebaseInstanceIdReceiver {
+    <init>();
+}
+
+-keep class com.google.firebase.iid.FirebaseInstanceIdInternalReceiver {
+    <init>();
+}
+
+-keep class com.google.firebase.iid.FirebaseInstanceIdService {
+    <init>();
+}
+
+-keep class com.google.firebase.provider.FirebaseInitProvider {
+    <init>();
+}
+
+-keep class com.google.android.gms.ads.AdActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.common.api.GoogleApiActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.appinvite.PreviewActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.auth.api.signin.RevocationBoundService {
+    <init>();
+}
+
+-keep class com.google.android.gms.cast.framework.media.MediaIntentReceiver {
+    <init>();
+}
+
+-keep class com.google.android.gms.cast.framework.media.MediaNotificationService {
+    <init>();
+}
+
+-keep class com.google.android.gms.cast.framework.ReconnectionService {
+    <init>();
+}
+
+-keep class com.google.firebase.crash.internal.service.FirebaseCrashReceiverService {
+    <init>();
+}
+
+-keep class com.google.firebase.crash.internal.service.FirebaseCrashSenderService {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementService {
+    <init>();
+}
+
+-keep class com.google.android.gms.tagmanager.TagManagerService {
+    <init>();
+}
+
+-keep class com.google.android.gms.tagmanager.TagManagerPreviewActivity {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.fd.** {
+    <fields>;
+    <methods>;
+}

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/setting_bg"
+    tools:context="com.schoolshieldparent_ui.view.activity.Activity_Settings">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <ImageButton
+            android:id="@+id/imageButton_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:paddingLeft="14dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/back_btn"/>
+    </RelativeLayout>
+
+    <com.schoolshieldparent_ui.view.custom_controls.TextView_Condessed
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/settings"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textSize="30dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/checkBoxNotificationLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setting_layout_touch"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="20dp">
+
+            <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/notification"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textSize="17dp"/>
+
+            <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                android:id="@+id/notificaitonsHeaderd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/notification"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textSize="17dp"/>
+
+            <com.schoolshieldparent_ui.view.custom_controls.TextView_Thin
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/notificaitonsHeaderd"
+                android:text="@string/turnOffNotificationAlert"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textSize="14dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/onoff"
+                android:button="@null"
+                android:enabled="false"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutLogout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setting_layout_touch"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="20dp">
+
+            <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:clickable="false"
+                android:text="@string/logout"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textSize="17dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/plans"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setting_layout_touch"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="20dp">
+
+            <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                android:id="@+id/textViewPlans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/viewPlans"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textSize="17dp"/>
+
+            <com.schoolshieldparent_ui.view.custom_controls.TextView_Thin
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewPlans"
+                android:text="@string/plansDetail"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textSize="14dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/termandc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setting_layout_touch"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="20dp">
+
+            <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                android:id="@+id/textViewTermCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/termAndConditions"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textSize="17dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/aboutus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setting_layout_touch"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="20dp">
+
+            <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                android:id="@+id/textViewAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/Aboutus"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textSize="17dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

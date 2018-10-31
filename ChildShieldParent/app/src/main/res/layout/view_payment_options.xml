@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/alert"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="5dp"
+        android:text="@string/paymentoption"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+
+    <TextView
+        android:id="@+id/sample"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="5dp"
+        android:text="@string/useforfree"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textSize="13dp" />
+
+    <com.schoolshieldparent_ui.view.custom_controls.EditText_Regular
+        android:id="@+id/editTextCode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bar"
+        android:ems="10"
+        android:hint="@string/usecoupnecode"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#b0b0b0"
+        android:textCursorDrawable="@drawable/cursor" />
+
+    <com.schoolshieldparent_ui.view.custom_controls.Button_Regular
+        android:id="@+id/button_ConfirmOption"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_selector_alert"
+        android:ems="10"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/confirmcode"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+
+    <com.schoolshieldparent_ui.view.custom_controls.Button_Regular
+        android:id="@+id/button_FromGoogle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_selector_alert"
+        android:ems="10"
+        android:text="@string/payfromgoogle"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+
+</LinearLayout>

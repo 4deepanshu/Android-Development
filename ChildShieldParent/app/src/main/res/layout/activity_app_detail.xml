@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forums_bg"
+    tools:context="com.schoolshieldparent_ui.view.activity.Activity_ForumAppDetail">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header_layoutwithbackbutton"/>
+
+
+    <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+        android:id="@+id/customTextViewDetail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:gravity="center"
+        android:textColor="#E5E5E5"
+        android:textSize="16dp"/>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/customTextViewDetail">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/view_Option1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_layout_touch"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="25dp">
+
+                <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/formOption1"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/view_Option2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_layout_touch"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="25dp">
+
+                <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/formOption2"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/view_Option4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_layout_touch"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="25dp">
+
+                <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/formOption4"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/view_Option5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_layout_touch"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="25dp">
+
+                <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/formOption5"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

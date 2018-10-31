@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/block_bg">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomborder"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="18dp"/>
+
+        <ImageButton
+            android:id="@+id/imageButton_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:paddingLeft="14dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/back_btn"/>
+
+        <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+            android:id="@+id/textview_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/fron_button"
+            android:gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingRight="20dp"
+            android:text="@string/customLocks"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                android:id="@+id/textViewAppName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/setting_layout_touch"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textSize="18dp"/>
+
+            <LinearLayout
+                android:id="@+id/cont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.schoolshieldparent_ui.view.custom_controls.EditText_Regular
+                    android:id="@+id/editextTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bar"
+                    android:ems="10"
+                    android:hint="@string/lockTitle"
+                    android:inputType="textPersonName"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#D0D0D0"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="18dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="10dp">
+
+                    <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                        android:id="@+id/textViewStartTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/starttime"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp"/>
+
+                    <ImageView
+                        android:id="@+id/drp1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/drop_down_icon"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                        android:id="@+id/textViewEndTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/endtime"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp"/>
+
+                    <ImageView
+                        android:id="@+id/drp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/drop_down_icon"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                        android:id="@+id/textViewTermCondition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/daily"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp"/>
+
+                    <ToggleButton
+                        android:id="@+id/toggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textViewTermCondition"
+                        android:layout_alignBottom="@+id/textViewTermCondition"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:button="@drawable/dailytoggle"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:textOff=""
+                        android:textOn=""/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dayssections"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                        android:id="@+id/selectDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/selectDay"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/selectDay"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.14"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/sunday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:button="@drawable/red_checked"/>
+
+                            <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="S"
+                                android:textColor="#ffffff"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.14"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/monday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:button="@drawable/red_checked"/>
+
+                            <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="M"
+                                android:textColor="#ffffff"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.14"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/tuesday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:button="@drawable/red_checked"/>
+
+                            <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="T"
+                                android:textColor="#ffffff"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.14"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/wednesday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:button="@drawable/red_checked"/>
+
+                            <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="W"
+                                android:textColor="#ffffff"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.14"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/thursday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:button="@drawable/red_checked"/>
+
+                            <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="T"
+                                android:textColor="#ffffff"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.14"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/friday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:button="@drawable/red_checked"/>
+
+                            <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="F"
+                                android:textColor="#ffffff"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.14"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/saturday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:button="@drawable/red_checked"/>
+
+                            <com.schoolshieldparent_ui.view.custom_controls.TextView_Regular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="S"
+                                android:textColor="#ffffff"
+                                android:textSize="17dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/imageButtonDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_selector"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/lockapplicatuion"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/imageButtonPermanent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@drawable/button_permanet_lock"
+            android:ems="10"
+            android:text="@string/permanetLock"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+</RelativeLayout>

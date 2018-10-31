@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.schoolshieldchild_ui">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.TYPE_SYSTEM_ALERT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <uses-feature android:name="android.hardware.telephony" />
+
+    <action android:name="android.location.PROVIDERS_CHANGED" />
+
+    <uses-feature
+        android:name="android.software.device_admin"
+        android:required="true" />
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.activity.SplashActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.activity.TutorialActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.LoginActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activity.HomeActivity"
+            android:excludeFromRecents="true" />
+        //Location Update Service
+        <service
+            android:name=".view.services.locationlock.LocationUpdate"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".view.services.locationlock.LocationLockScreenView"
+            android:enabled="true"
+            android:exported="true" />
+        // Location Update end
+
+
+        //Screen Lock
+        <service
+            android:name=".view.services.screenlock.DetectScreenLock"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".view.services.screenlock.SceenLockView"
+            android:enabled="true"
+            android:exported="true" />
+        // Screen Lock end
+
+
+        //User Location Update Service
+        <service
+            android:name=".view.services.userlocation.UserLocationUpdate"
+            android:enabled="true"
+            android:exported="true" />
+        // User Location Update end
+
+
+        //Application Upload Service
+        <service
+            android:name=".view.services.UploadApplications"
+            android:enabled="true"
+            android:exported="true" />
+        // Application Upload service end
+
+        //Image Upload Service
+        <service
+            android:name=".view.services.UploadGalleryImages"
+            android:enabled="true"
+            android:exported="true" />
+        // Image Upload service end
+
+
+        //History Search Service
+        <service
+            android:name=".view.services.UploadHistory"
+            android:enabled="true"
+            android:exported="true" />
+        //History Search service end
+
+        //History Search Service
+        <service
+            android:name=".view.services.applicationlocking.DetectLockService"
+            android:enabled="true"
+            android:exported="true" />
+        //History Search service end
+
+
+        //Lock Screen Service
+        <service
+            android:name=".view.services.applicationlocking.LockScreenView"
+            android:enabled="true"
+            android:exported="true" />
+        //Lock Screen service
+
+
+        //Application Time tracking Service
+        <service
+            android:name=".view.services.ApplicationRunningTime"
+            android:enabled="true"
+            android:exported="true" />
+        //Application Time Tracking End
+
+
+        //Application reboot detect
+        <receiver
+            android:name=".view.services.phonerestart.BootUpReceiver"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        // Application reboot end
+
+        //Application Uninstall
+        <receiver android:name=".view.services.InstallUninstallIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        //Application uninstall
+
+        //Application Usage Access Services
+        //Application
+
+
+        //Detector for GPS Enabled or disabled
+        <receiver android:name=".view.services.detectors.GpsOnOffDetector">
+            <intent-filter>
+                <action android:name="android.location.PROVIDERS_CHANGED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        //Destector enable end
+
+
+        //Admin Permission
+        <receiver
+            android:name=".view.services.permissions.MyAdmin"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_sample" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+                <action android:name="android.app.action.DEVICE_ADMIN_DISABLED" />
+                <action android:name="android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED" />
+            </intent-filter>
+        </receiver>
+        // Admin permission end
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <!-- [START firebase_service] -->
+        <service android:name=".pushnotification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- [END firebase_service] -->
+        <!-- [START firebase_iid_service] -->
+        <service android:name=".pushnotification.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- [END firebase_iid_service] -->
+
+
+        <!-- [START INCOMMING MESSAGE RECIVER] -->
+        <!-- [END START INCOMMING  MESSAGE RECIVER] -->
+
+        <service
+            android:name="com.tuenti.smsradar.SmsRadarService"
+            android:exported="false"
+            android:label="@string/app_name" />
+        <service
+            android:name=".view.services.messagereciver.InitilizeIncommingAndOutgoingmessageHandler"
+            android:exported="false"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name=".view.activity.NumbersSettingsActivity"
+            android:label="@string/PhoneNumbers" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".view.activity.Activity_UsageAccessEnable"></activity>
+        <activity android:name=".view.activity.Activity_AdminEnable"></activity>
+        <activity android:name=".view.activity.Activity_DrawOverOtherApplicatin"></activity>
+
+
+        //Application reboot detect
+        <receiver
+            android:name=".view.services.ScreenReceiver"
+            android:permission="android.P"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+            </intent-filter>
+        </receiver>
+        // Application reboot end
+
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="9f69055a361f517582a3d880d4b4a9e6856ba631" />
+    </application>
+
+</manifest>
